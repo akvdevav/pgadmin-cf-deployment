@@ -1,4 +1,6 @@
-# pgadmin-cf-deploymebt
+# pgadmin-cf-deployment
+
+cf deployment yaml to deploy pgadmin on cloud foundry using an existing DB to persist data.
 
 
 ```
