@@ -1,0 +1,18 @@
+applications:
+- name: pgadmin-web
+  memory: 2G
+  disk_quota: 1G
+  timeout: 180
+  health-check-type: port
+  health-check-invocation-timeout: 10
+  ports:
+    - 443
+  docker:
+    image: dpage/pgadmin4:latest
+  env:
+    PGADMIN_DEFAULT_EMAIL: "admin"
+    PGADMIN_DEFAULT_PASSWORD: "1@admin123!"
+    PGADMIN_LISTEN_ADDRESS: "0.0.0.0"
+    PGADMIN_LISTEN_PORT: "443"
+
+
